@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-color: black;
+    color: goldenrod;
+}
+
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #69b5d3b6;
+}
+
+.panel-heading {
+    background-color: blue;
+}
+
+.panel-title {
+    color: goldenrod;
+}
+
+.panel>.panel-heading {
+    background-image: none;
+    background-color: #ddd;
+    color: grey;
+}
