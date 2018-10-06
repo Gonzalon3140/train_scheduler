@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -20,7 +24,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="jumbotron text-center">
-                    <h1><span class="glyphicon glyphicon-road"></span> Train Schedule and schedule</h1>
+                    <h1><span class="glyphicon glyphicon-road"></span> Train Schedule</h1>
                 </div>
             </div>
         </div>
@@ -33,16 +37,16 @@
                     </div>
                     <div class="panel-body">
                         <div id="content">
-                            <table class="table">
+                            <table class="table" id='train-table'>
                                 <thead>
                                     <tr>
-                                        <th>Update</th>
+                                        <!-- <th>Update</th> -->
                                         <th>Train Name</th>
                                         <th>Destination</th>
                                         <th>Frequency (min)</th>
-                                        <th>Next Arrival</th>
+                                        <th>First Train</th>
                                         <th>Minutes Away</th>
-                                        <th>Remove</th>
+                                        <!-- <th>Remove</th> -->
                                     </tr>
                                 </thead>
                                 <tbody id="tableContent">
@@ -91,10 +95,9 @@
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/af.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
     <script src="./assets/javascript/train.js"></script>
 </body>
 
