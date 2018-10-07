@@ -1,29 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .jumbotron {
-    background-color: black;
-    color: goldenrod;
+  background-color: black;
+  color: goldenrod;
 }
 
-
 body {
-    font-family: 'Cinzel', serif;
-    background-color: #69b5d3b6;
+  background-image: url(../images/Chicago.jpg);
+  font-family: "Cinzel", serif;
+  background-color: #69b5d3b6;
 }
 
 .panel-heading {
-    background-color: blue;
+  background-color: blue;
 }
 
 .panel-title {
-    color: goldenrod;
+  background-color: black;
+  margin-bottom: 10px;
+  color: goldenrod;
 }
 
-.panel>.panel-heading {
-    background-image: none;
-    background-color: #ddd;
-    color: grey;
+.panel > .panel-heading {
+  background-image: none;
+  background-color: #ddd;
+  color: grey;
+}
+
+#tableContent {
+  background-color: #ddd;
 }
