@@ -12,6 +12,7 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
+$("#tableContent").empty();
 console.log(database)
 $("#formID").on("submit", function (event) {
     event.preventDefault();
@@ -35,6 +36,13 @@ $("#formID").on("submit", function (event) {
 
     return false;
 });
+
+function removeRow() {
+    $(".row-" + $(this).attr("data-index")).remove();
+    database.ref().child($(this).attr("data-key")).remove();
+    console.log(removeRow)
+
+};
 
 database.ref().on("child_added", function (snapshot) {
     let train = snapshot.val()
@@ -63,4 +71,6 @@ database.ref().on("child_added", function (snapshot) {
 
     $("#train-table > tbody").append("<tr><td>" + train.name + "</td><td>" + train.destination + "</td><td>" +
         train.frequency + "</td><td>" + train.firstTime + "</td><td>" + trainMinutes % 60 + "</td></tr>");
+
+
 });
